@@ -1,30 +1,24 @@
-import {useState, useEffect} from 'react';
+
 
 function HeroSection (){
+
+    const backgroundImage = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0JTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60';
 
 
 
     return (
-        <section className="relative h-[600px] overflow-hidden">
-        <div
-        className={`absolute inset-0 flex h-full ${
-          isTransitioning ? "transition-transform duration-1000 ease-in-out" : ""
-        }`}
-        style={{ transform: `translateX(-${current * 100}%)` }}
-      >
-        {slides.map((img, index) => (
-          <div key={index} className="w-full h-full flex-shrink-0 relative">
-            <img
-              src={img}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-cover object-top"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent"></div>
-          </div>
-        ))}
-      </div>
+        <section className="hero-section relative h-[600px]
+         flex items-center justify-center text-center
+         text-white background-cover overflow-hidden " 
+         style={{backgroundImage:`url(${backgroundImage})`}}>
 
+            <div>
+
+            </div>
         </section>
+        
+
+        
 
 
     );
