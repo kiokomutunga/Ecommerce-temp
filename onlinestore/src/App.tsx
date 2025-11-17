@@ -1,13 +1,12 @@
-import HeroSection from './components/Staticpages/HeroPage'
-import './App.css'
+import Layout from './components/Layout/Layout'
 
 function App() {
   
 
   return (
     <>
-    <HeroSection/>
-   
+    
+      <Layout/>
       
     </>
   )
